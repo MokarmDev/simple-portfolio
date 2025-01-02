@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F9FAFF;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.title::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: #FDC435;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+/* start navbar style  */
+
+.nav-bar {
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.navbar-brand img {
+    width: 150px;
+    padding-left: 20px;
+}
+
+.navbar-nav {
+    background-color: #FDC435;
+    padding: 0 81.5px;
+
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* end navbar style */
+
+/* start landing page style  */
+.landing-page .content {
+    padding-top: 10%;
+}
+
+.landing-page .content p:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FDC435;
+}
+
+.landing-page .content p:last-of-type {
+    color: #828282;
+    font-size: 24px;
+}
+
+.landing-page .content h1 {
+    font-size: 64px;
+    margin: 20px 0;
+}
+
+.landing-page .content button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.landing-page .content button:last-of-type {
+    border: #25282B;
+}
+
+.landing-page .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* end landing page style */
+
+/* start projects style */
+.projects {
+    margin-top: 5%;
+}
+
+
+.project-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-card .content {
+    padding: 20px;
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.project-card .btn {
+    border-radius: 25px;
+}
+
+/* end projects style */
+
+
+/* start contact style  */
+
+.contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn-send {
+    background-color: #ffc107;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+}
+.social-icons a img{
+    width: 30px;
+    height: 30px;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* end contact style   */
+
+
+/* responsive for mobile screen  */
+@media (max-width: 767px) {
+    .landing-page .content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .landing-page .content p {
+        text-align: center;
+    }
+
+    .landing-page .content button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .landing-page .image img {
+        margin-top: 20px;
+    }
+}
